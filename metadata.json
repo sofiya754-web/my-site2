@@ -1,0 +1,6 @@
+{
+  "name": "WISA - Premium Football Organization",
+  "description": "Cinematic scroll-driven landing page for WISA, a world-class football training and performance organization.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

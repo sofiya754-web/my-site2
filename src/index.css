@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto+Mono:wght@400;500;600;700&subset=cyrillic,cyrillic-ext,latin,latin-ext&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-mono: "Roboto Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
+@keyframes flyOutRight {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(250%); }
+}
+
+@keyframes flyInLeft {
+  0% { transform: translateX(-250%); }
+  100% { transform: translateX(0); }
+}
+
+.animate-fly-out {
+  animation: flyOutRight 0.5s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+.animate-fly-in {
+  animation: flyInLeft 0.5s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+@keyframes flyOutUp {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-150%); }
+}
+
+@keyframes flyInUp {
+  0% { transform: translateY(150%); }
+  100% { transform: translateY(0); }
+}
+
+.animate-fly-out-up {
+  animation: flyOutUp 0.4s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+.animate-fly-in-up {
+  animation: flyInUp 0.4s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html, body {
+  background-color: #000;
+  color: #fff;
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
